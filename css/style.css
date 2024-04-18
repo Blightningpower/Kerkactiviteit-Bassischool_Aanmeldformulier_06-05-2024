@@ -73,9 +73,13 @@
    margin: 0;
  }
 
- iframe {
-   min-width: 28rem;
-   min-height: 40rem;
+ @media only screen and (max-width: 500px) {
+
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
  }
 
  /* Code applied to all HTML elements with an ID */
@@ -177,7 +181,7 @@
  }
 
  #nParent {
-   min-width: 27rem;
+   min-width: 31rem;
  }
 
  #phoneNrChild {
@@ -185,7 +189,7 @@
  }
 
  #phoneNrParent {
-   min-width: 20rem;
+   min-width: 29rem;
  }
 
  #eMailChild {
@@ -193,7 +197,7 @@
  }
 
  #eMailParent {
-   min-width: 20rem;
+   min-width: 27rem;
  }
 
  ::placeholder {
@@ -232,7 +236,7 @@
  }
 
  #iBAN {
-   min-width: 25rem;
+   min-width: 27rem;
    background-color: #c0ffee;
    /* Light green background */
    border-radius: 3px;
