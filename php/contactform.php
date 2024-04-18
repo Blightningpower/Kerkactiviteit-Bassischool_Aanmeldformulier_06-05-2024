@@ -5,12 +5,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $naamDeelnemer = $_POST['naamDeelnemer'];
     $telefoonDeelnemer = $_POST['telefoonnummerDeelnemer'];
     $emailDeelnemer = $_POST['emailDeelnemer'];
+    $naamOuder = $_POST['naamOuder'];
+    $telefoonOuder = $_POST['telefoonnummerOuder'];
+    $emailOuder = $_POST['emailOuder'];
     $iban = $_POST['iBAN'];
 
     // Email configuration
-    $mailTo = "ginah1332@gmail.com";
-    $subject = "Form Submission"; // Set your email subject here
-    $headers = "From: " . $emailDeelnemer; // You can set the sender's email here
+    $mailTo = "info@chalgado.com";
+    // ginaarmanyous032@gmail.com 
+    $subject = "Inschrijving Duinrell 6 mei 2024"; // Set your email subject here
+    $headers = "From: " . $emailOuder; // You can set the sender's email here
 
     // Email content
     $txt = "Je hebt een aanmelding ontvangen van " . "\n"
@@ -23,6 +27,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         . $telefoonDeelnemer . "\n\n" .
         "Email Deelnemer: " . "\n"
         . $emailDeelnemer . "\n\n" .
+        "Naam ouder: " . "\n"
+        . $naamOuder . "\n\n" .
+        "Telefoonnummer ouder: " . "\n"
+        . $telefoonOuder . "\n\n" .
+        "Email ouder: " . "\n"
+        . $emailOuder . "\n\n" .
         "IBAN: " . "\n"
         . $iban . "\n\n";
 

@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>Inschrijvingsformulier Basisschool Kerkkamp 2024</title>
+  <title>Kerkactiviteit-Bassischool_Aanmeldformulier_06-05-2024</title>
 
   <!--links for the Favicons-->
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
@@ -24,16 +24,22 @@
 
 <body>
   <header>
-    <h1>Inschrijvingsformulier Middelbare school Kerkkamp 2024</h1>
+    <h1>Kerkactiviteit-Bassischool_Aanmeldformulier_06-05-2024</h1>
   </header>
   <main>
     <ul>
+      <li>
+        <h2>Op 6 mei gaan we met de hele kerk naar Duinrell voor een superleuk dagje vol avontuur en plezier! We gaan
+          samen alle attracties ontdekken en nieuwe herinneringen maken, dus zorg dat je erbij bent voor een dag vol
+          lachen en gezelligheid! 🎉</h2>
+      </li>
       <li>
         <h2>Vul in dit inschrijvingsformulier je gegevens in en klik op de knop 'Verzend gegevens' om je
           gegevens te verzenden.</h2>
       </li>
       <li>
-        <h2>Klik daarna op de knop 'Betalen' om je inschrijving te voltooien. De kosten voor het kamp zijn €50,-
+        <h2>Klik daarna op de knop 'Betalen' om je inschrijving te voltooien. De kosten voor de activiteit zijn €25,-
+          p.p.
         </h2>
       </li>
       <li>
@@ -44,36 +50,32 @@
         <h2><span>GEEN betaling is GEEN aanmelding!</span></h2>
       </li>
       <li>
-        <h2>Kijk voor de zekerheid op je bankrekening of het bedrag is betaald.</h2>
+        <h2>Kijk voor de zekerheid op je bankrekening of het bedrag is betaald en stuur een appje naar Gina Armanyous
+          via <a href="#telephoneNumber" class="telephoneNumberAnchor">de onderstaande telefoonnummer</a> zodra het is
+          gelukt.</h2>
       </li>
       <li>
-        <h2>Neem contact op bij twijfels.</h2>
-      </li>
-      <li>
-        <h2>Alle velden in dit formulier zijn verplicht in te vullen.</h2>
-      </li>
-      <li>
-        <h2>Houd er rekening mee dat er een beperkt aantal plekken zijn. Plekken worden <span>NIET</span>
-          gereserveerd.
-        </h2>
+        <h2>Alle velden met een <span class="requiredField">*</span> in dit formulier zijn verplicht in te vullen.</h2>
       </li>
       <li>
         <h2><span>(LET OP! Dit formulier is per deelnemer. Als je meer deelnemers wilt aanmelden,
             moet je meerdere keren het formulier invullen en betalen!)</span></h2>
       </li>
       <li>
-        <h2>Problemen met aanmelden? Neem contact op met Gina Hanna via haar telefoonnummer: <a
-          href="tel:+31610061549" class="telephoneNumber">06 100 61 549</a></h2>
+        <h2>Problemen met aanmelden? Neem contact op met Gina Armanyous via haar telefoonnummer: <a
+            href="tel:+31640746017" id="telephoneNumber">06 407 46 017</a></h2>
       </li>
     </ul>
     <form id="form" action="php/contactform.php" method="POST" target="_self">
+
+      <!-- Deelnemergegevens -->
 
       <div class="row">
         <div class="col-25">
           <label for="group">Groep:</label>
         </div>
         <div class="col-75">
-          <input type="number" id="group" name="Groep" placeholder="Vul hier de groep in van de deelnemer" min="5"
+          <input type="number" id="group" name="Groep" placeholder="Vul hier de groep in van de deelnemer" min="1"
             max="8" required>
         </div>
       </div>
@@ -108,13 +110,47 @@
         </div>
       </div>
 
+      <!-- Oudergegevens -->
+
+      <div class="row">
+        <div class="col-25">
+          <label for="nParent">Naam Ouder:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="nParent" name="naamOuder"
+            placeholder="Vul hier de voor- en achternaam in van de ouder van de deelnemer" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="phoneNrParent">Telefoonnummer Ouder:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="phoneNrParent" name="telefoonnummerOuder"
+            placeholder="Vul hier het telefoonummer in van de ouder van de deelnemer">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="eMailParent">E-mail Ouder:</label>
+        </div>
+        <div class="col-75">
+          <input type="email" id="eMailParent" name="emailOuder"
+            placeholder="Vul hier het E-mailadres in van de ouder van de deelnemer">
+        </div>
+      </div>
+
+      <!-- Betalinggegevens -->
+
       <div class="row">
         <div class="col-25">
           <label for="iBAN">IBAN:</label>
         </div>
         <div class="col-75">
-          <input type="text" id="iBAN" name="iBAN" placeholder="Vul hier het bankrekeningnummer in waarmee je betaalt"
-            required>
+          <input type="text" id="iBAN" name="iBAN"
+            placeholder="Vul hier het bankrekeningnummer in waarmee wordt betaald" required>
         </div>
       </div>
 
